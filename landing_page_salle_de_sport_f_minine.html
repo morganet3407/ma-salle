@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaSalle - Ton Sanctuaire de Chipie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Script Tally pour le redimensionnement automatique -->
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    
+    <!-- Google Calendar Appointment Scheduling begin -->
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+    <!-- end Google Calendar Appointment Scheduling -->
+
+    <style>
+        :root {
+            --sweet-pink: #FDE2E4;
+            --cheeky-pink: #FF758F;
+            --cream: #FFF9F3;
+            --terracotta: #d7995f;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cream);
+            color: #4A3E3E;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .handwritten {
+            font-family: 'Dancing Script', cursive;
+            color: var(--cheeky-pink);
+            font-size: 1.4em;
+        }
+        .hero-bubble {
+            background: linear-gradient(135deg, #FDE2E4 0%, #FFF9F3 100%);
+            border-radius: 40px 100px 40px 100px;
+        }
+        .accent-color {
+            color: var(--terracotta);
+        }
+        .btn-gradient {
+            background: linear-gradient(90deg, var(--cheeky-pink), var(--terracotta));
+            transition: transform 0.2s ease;
+        }
+        .btn-gradient:hover {
+            transform: scale(1.05);
+        }
+        .card-shadow {
+            box-shadow: 0 15px 35px -10px rgba(255, 117, 143, 0.15);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold tracking-tight accent-color italic">MaSalle <span class="text-pink-400">♥</span></div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold items-center">
+            <a href="#concept" class="hover:text-pink-500 transition">Le Mood</a>
+            <a href="#reserver" class="hover:text-pink-500 transition">Rendez-vous</a>
+            <a href="#adresse" class="hover:text-pink-500 transition">Nous Trouver</a>
+            <a href="#inscription" class="px-4 py-2 bg-pink-100 text-pink-600 rounded-full hover:bg-pink-200 transition">Je craque !</a>
+        </div>
+    </nav>
+
+    <header class="relative px-6 md:px-8 pt-12 pb-24 max-w-7xl mx-auto text-center hero-bubble mt-4 border-2 border-white">
+        <div class="max-w-3xl mx-auto">
+            <span class="text-xs uppercase tracking-[0.3em] text-pink-500 font-bold mb-4 block floating">Exclusivement pour nous les filles</span>
+            <h1 class="text-4xl md:text-7xl mb-8 leading-tight">
+                Transpire avec <span class="italic accent-color">style</span>, <br>
+                brille avec <span class="handwritten">audace</span>.
+            </h1>
+            <p class="text-base md:text-lg text-gray-600 mb-10 leading-relaxed font-light">
+                Oublie les salles sombres et bruyantes. Ici, c'est ton cocon sucré pour sculpter ton corps, papoter et te sentir irrésistible.
+            </p>
+            
+            <!-- Google Calendar Button -->
+            <div id="calendar-cta" class="inline-block">
+                <script>
+                (function() {
+                  var target = document.currentScript;
+                  window.addEventListener('load', function() {
+                    calendar.schedulingButton.load({
+                      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2lTIZ7Lag2PQ9vpPJwcncT2ziC5v55kk9KFXNEgz2cBibde1pWtKqCnVwMCx8ss7XifRIMmsu1?gv=true',
+                      color: '#d7995f',
+                      label: 'Réserver ma visite VIP',
+                      target,
+                    });
+                  });
+                })();
+                </script>
+            </div>
+        </div>
+    </header>
+
+    <section id="concept" class="py-20 px-8 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8 md:gap-12">
+            <div class="text-center p-8 bg-white rounded-[2rem] card-shadow border-b-4 border-pink-100">
+                <div class="w-14 h-14 bg-pink-50 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">🎀</div>
+                <h3 class="text-xl mb-4 italic">Zéro complexes</h3>
+                <p class="text-gray-500 font-light text-sm">Viens comme tu es (même en pyjama, on ne jugera pas, promis !).</p>
+            </div>
+            <div class="text-center p-8 bg-white rounded-[2rem] card-shadow border-b-4 border-orange-100">
+                <div class="w-14 h-14 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">🍭</div>
+                <h3 class="text-xl mb-4 italic">Mood Sucré</h3>
+                <p class="text-gray-500 font-light text-sm">Une playlist qui donne envie de danser et une ambiance ultra bienveillante.</p>
+            </div>
+            <div class="text-center p-8 bg-white rounded-[2rem] card-shadow border-b-4 border-pink-100">
+                <div class="w-14 h-14 bg-pink-50 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">💅</div>
+                <h3 class="text-xl mb-4 italic">Power Girl</h3>
+                <p class="text-gray-500 font-light text-sm">Parce qu'on est plus fortes ensemble. Rejoins notre club de chipies !</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="inscription" class="py-16 md:py-24 bg-white relative overflow-hidden">
+        <div class="absolute top-10 left-10 text-pink-100 text-9xl font-bold opacity-20 pointer-events-none italic">Love</div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl mb-4 italic">Prête à briller ? <span class="handwritten">Rejoins-nous</span></h2>
+                <p class="text-gray-500 font-light">Laisse-nous tes coordonnées, on s'occupe du reste (et du café).</p>
+            </div>
+            <div class="rounded-[2.5rem] overflow-hidden border-4 border-pink-50 card-shadow">
+                <iframe 
+                    src="https://tally.so/r/1AE6dL?transparentBackground=1" 
+                    width="100%" 
+                    height="700" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0" 
+                    title="Inscription MaSalle"
+                    style="min-height: 600px;">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="reserver" class="py-24 px-8 text-center bg-[#FDE2E4] rounded-t-[3rem]">
+        <h2 class="text-3xl md:text-4xl mb-8 italic">On papote un peu ? ☕</h2>
+        <p class="mb-10 text-gray-600 max-w-xl mx-auto font-light">
+            Tu n'es pas encore sûre ? Viens faire un tour, découvrir l'espace et poser toutes tes questions à notre équipe de choc.
+        </p>
+        <div class="flex justify-center">
+            <div id="calendar-footer-btn">
+                <script>
+                (function() {
+                  var target = document.currentScript;
+                  window.addEventListener('load', function() {
+                    calendar.schedulingButton.load({
+                      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2lTIZ7Lag2PQ9vpPJwcncT2ziC5v55kk9KFXNEgz2cBibde1pWtKqCnVwMCx8ss7XifRIMmsu1?gv=true',
+                      color: '#d7995f',
+                      label: 'Prendre rendez-vous',
+                      target,
+                    });
+                  });
+                })();
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <section id="adresse" class="py-20 px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-xs uppercase tracking-[0.3em] text-pink-500 font-bold mb-2 block">Où nous dégoter ?</span>
+                <h2 class="text-3xl md:text-5xl italic">Notre petit <span class="handwritten">cocon</span> secret 📍</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-12 gap-8 items-center">
+                <!-- Informations Pratiques -->
+                <div class="md:col-span-5 space-y-6 pr-0 md:pr-8">
+                    <div class="p-6 bg-[#FFF9F3] rounded-[2rem] border border-pink-100 card-shadow">
+                        <h3 class="text-xl font-semibold mb-2 accent-color italic">L'Adresse</h3>
+                        <p class="text-gray-600 font-light leading-relaxed">
+                            42 Rue des Rosiers,<br>
+                            75004 Paris
+                        </p>
+                        <p class="text-xs text-pink-500 font-medium mt-2">✨ Métro : Saint-Paul (Ligne 1)</p>
+                    </div>
+
+                    <div class="p-6 bg-[#FFF9F3] rounded-[2rem] border border-pink-100 card-shadow">
+                        <h3 class="text-xl font-semibold mb-2 accent-color italic">Les Horaires Doux</h3>
+                        <ul class="text-gray-600 font-light space-y-1 text-sm">
+                            <li class="flex justify-between"><span>Lundi - Vendredi :</span> <strong class="font-semibold">08:00 - 21:00</strong></li>
+                            <li class="flex justify-between"><span>Samedi :</span> <strong class="font-semibold">09:00 - 18:00</strong></li>
+                            <li class="flex justify-between text-pink-500"><span>Dimanche (Brunch & Yoga) :</span> <strong class="font-semibold">10:00 - 14:00</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed container with responsive aesthetic layout -->
+                <div class="md:col-span-7 h-[350px] md:h-[450px] rounded-[2.5rem] overflow-hidden border-4 border-[#FDE2E4] card-shadow">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.5368383391763!2d2.3570624!3d48.8574483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1e07bf37f5%3A0x6b8aa6f3b0e1e695!2sLe%20Marais%2C%2075004%20Paris!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-8 text-center text-[10px] text-gray-400 uppercase tracking-widest border-t border-gray-100 bg-white">
+        &copy; 2026 MaSalle — Fait avec amour et un peu de peps ✨
+    </footer>
+
+</body>
+</html>
